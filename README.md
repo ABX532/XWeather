@@ -53,7 +53,7 @@ pip install -r requirements.txt
 
 ## How to Run
 
-1. Save the Python script as `main.py`.
+1. Download the file in 0.0.1 Beta Release as `main.py`.
 2. Open your terminal or command prompt and run:
 
 ```bash
