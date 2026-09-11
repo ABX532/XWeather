@@ -40,7 +40,7 @@ cd xweather
 Install all required dependencies via `pip`:
 
 ```bash
-pip install customtkinter openmeteo-requests geopy requests-cache retry-requests
+pip install customtkinter openmeteo-requests geopy requests-cache retry-requests tkfontchooser
 ```
 
 Or using a `requirements.txt` file:
