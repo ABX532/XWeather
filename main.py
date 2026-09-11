@@ -4,6 +4,7 @@ from datetime import datetime
 import customtkinter as ctk
 import openmeteo_requests
 from geopy.geocoders import Nominatim
+from tkinter import tkFont
 
 custom_font = tkFont.Font(family="Zekton", size=30, weight="bold")
 custom_font2 = tkFont.Font(family="URW Gothic", size=30, weight="bold")
