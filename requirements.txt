@@ -1,1 +1,1 @@
-customtkinter openmeteo-requests geopy requests-cache retry-requests
+customtkinter openmeteo-requests geopy requests-cache retry-requests tkfontchooser
