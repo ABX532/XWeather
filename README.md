@@ -24,6 +24,13 @@ xweather/
 
 ---
 
+# Notice
+
+**Note**: For Better Experience, Consider Downloading The Following Fonts: Zekton, URW Gothic and Red Hat Text
+**Another Note:** This Project is Currently in Beta Release. You May Encounder Some Bugs. Please Report Any Bug.
+
+---
+
 ## Prerequisites & Installation
 
 Make sure you have Python 3.8 or higher installed on your system.
