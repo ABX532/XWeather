@@ -1,15 +1,21 @@
 # XWeather 🌤️
 
-**XWeather** is a modern Python desktop application built with `CustomTkinter` that provides real-time weather information using the free Open-Meteo API and GeoPy geocoding.
+A lightweight desktop weather application built with Python and **CustomTkinter**, utilizing the **Open-Meteo API** and **Geopy** for accurate real-time weather forecasting.
+
+![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)
+![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
 ## Features
 
-* **Search Options**: Look up weather by geographic coordinates (Latitude/Longitude) or by City Name.
-* **Dynamic Visuals**: Temperature display changes color dynamically based on weather severity (blue for cold, red for extreme heat).
-* **Comprehensive Metrics**: Displays temperature (°C), weather conditions, humidity (%), wind speed (km/h), and local check time.
-* **Modern GUI**: Sleek, customizable UI powered by CustomTkinter with a gold theme.
+* **City Search & Coordinates:** Look up weather details by city name or exact latitude and longitude.
+* **Dynamic Search History:** Saves up to 10 recent searches locally to `~/.xweather/data.json` with quick-launch search tags.
+* **Auto-Wrapping UI:** Search tags dynamically wrap to new lines based on window width and city name length.
+* **Temperature Color-Coding:** Real-time visual status indicator changes color depending on temperature severity.
+* **Dark / Light Mode:** Built-in theme toggling.
+* **Offline & Connection Detection:** Displays distinct warnings for lost internet connectivity vs. invalid coordinates.
 
 ---
 
@@ -20,6 +26,7 @@ xweather/
 ├── main.py              # Main application entry point
 ├── requirements.txt     # Dependency list
 └── README.md            # Project documentation
+└── lICENCE.md           # Project Licence
 ```
 
 ---
@@ -38,7 +45,7 @@ Make sure you have Python 3.8 or higher installed on your system.
 ### 1. Clone or Download the Repository
 
 ```bash
-git clone https://github.com/your-username/xweather.git
+git clone [https://github.com/ABX532/XWeather.git](https://github.com/ABX532/XWeather.git)
 cd xweather
 ```
 
@@ -47,7 +54,7 @@ cd xweather
 Install all required dependencies via `pip`:
 
 ```bash
-pip install customtkinter openmeteo-requests geopy requests-cache retry-requests tkfontchooser
+pip install customtkinter openmeteo-requests geopy requests
 ```
 
 Or using a `requirements.txt` file:
@@ -60,7 +67,7 @@ pip install -r requirements.txt
 
 ## How to Run
 
-1. Download the file in 0.0.1 Beta Release as `main.py`.
+1. Download the file in 0.0.2 Beta Release as `main.py`.
 2. Open your terminal or command prompt and run:
 
 ```bash
@@ -79,22 +86,6 @@ python main.py
    * Click **Change To City Name**.
    * Enter the city name (e.g., `London`, `Tokyo`, `Paris`).
    * Click **Confirm** to geocode the city and retrieve current weather metrics.
-
----
-
-## Temperature Color Thresholds
-
-The application dynamically updates the temperature text color according to the current temperature:
-
-| Temperature Range (°C) | Display Color | Visual Indication |
-| :--- | :--- | :--- |
-| ≤ 0°C | Dark Blue | Freezing |
-| 1°C – 15°C | Blue | Cold |
-| 16°C – 20°C | Light Blue | Cool |
-| 21°C – 25°C | Yellow | Mild |
-| 26°C – 30°C | Gold | Warm |
-| 31°C – 35°C | Dark Orange | Hot |
-| > 35°C | Red | Extreme Heat |
 
 ---
 
@@ -117,4 +108,4 @@ The application dynamically updates the temperature text color according to the 
 
 ## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source and available under the [GPLv3 License](LICENSE).
