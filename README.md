@@ -67,11 +67,11 @@ pip install -r requirements.txt
 
 ## How to Run
 
-1. Download the file in 0.0.2 Beta Release as `main.py`.
-2. Open your terminal or command prompt and run:
+Run This Command. Simple As That
+Be Sure that You Are In XWeather file in Terminal
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 ---
