@@ -44,8 +44,6 @@ Or using a `requirements.txt` file:
 pip install -r requirements.txt
 ```
 
----
-
 ### 2. Clone or Download the Repository
 
 ```bash
