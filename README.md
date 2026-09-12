@@ -49,7 +49,7 @@ pip install -r requirements.txt
 ### 2. Clone or Download the Repository
 
 ```bash
-git clone [https://github.com/ABX532/XWeather.git](https://github.com/ABX532/XWeather.git)
+git clone https://github.com/ABX532/XWeather.git
 cd xweather
 ```
 
