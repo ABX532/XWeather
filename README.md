@@ -19,18 +19,6 @@ A lightweight desktop weather application built with Python and **CustomTkinter*
 
 ---
 
-## Project Structure
-
-```text
-xweather/
-├── main.py              # Main application entry point
-├── requirements.txt     # Dependency list
-└── README.md            # Project documentation
-└── lICENCE.md           # Project Licence
-```
-
----
-
 # Notice
 
 **Note**: For Better Experience, Consider Downloading The Following Fonts: Zekton, URW Gothic and Red Hat Text
@@ -42,14 +30,7 @@ xweather/
 
 Make sure you have Python 3.8 or higher installed on your system.
 
-### 1. Clone or Download the Repository
-
-```bash
-git clone [https://github.com/ABX532/XWeather.git](https://github.com/ABX532/XWeather.git)
-cd xweather
-```
-
-### 2. Install Required Dependencies
+### 1. Install Required Dependencies
 
 Install all required dependencies via `pip`:
 
@@ -64,6 +45,13 @@ pip install -r requirements.txt
 ```
 
 ---
+
+### 2. Clone or Download the Repository
+
+```bash
+git clone [https://github.com/ABX532/XWeather.git](https://github.com/ABX532/XWeather.git)
+cd xweather
+```
 
 ## How to Run
 
