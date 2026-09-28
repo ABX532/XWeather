@@ -44,14 +44,14 @@ clone the repository
 git clone https://github.com/ABX532/XWeather/
 ```
 
-# 🐧 Linux
+### 🐧 Linux
 Run the installer script with sudo to set up /opt/xweather, create a dedicated Python virtual environment, and register an application menu launcher (.desktop).
 
 ```Bash
 sudo chmod +x install.sh
 sudo ./install.sh
 ```
-# 🪟 Windows
+### 🪟 Windows
 Open PowerShell as Administrator, navigate to the project directory, and execute the installation script:
 
 ```PowerShell
@@ -59,7 +59,7 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1
 Note: The Windows installer configures pythonw.exe to run the application silently in the background without opening a command prompt window.
 ```
 
-# 🍎 macOS
+### 🍎 macOS
 Open Terminal, navigate to the repository directory, and run the macOS setup script (no sudo required):
 
 ```Bash
