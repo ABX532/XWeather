@@ -1,10 +1,11 @@
 <p align="center">
  <img src="xweather_icon.png" width="200" height="200">
+</p>
 
-![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)
-![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-blue)
-![License](https://img.shields.io/badge/License-GPL-green)
-
+<p align="center">
+ ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)
+ ![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-blue)
+ ![License](https://img.shields.io/badge/License-GPL-green)
 </p>
 
 # XWeather
