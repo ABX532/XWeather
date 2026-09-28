@@ -1,6 +1,12 @@
+[XWeather_icon.png]
+
+![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)
+![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-blue)
+![License](https://img.shields.io/badge/License-GPL-green)
+
 # XWeather
 
-A lightweight, cross-platform weather application and Conky desktop widget powered by Python and Open-Meteo. **XWeather** features automatic location detection, current weather conditions, Air Quality Index (AQI), and a 7-day extended forecast with dynamic display scaling support.
+A lightweight, cross-platform weather application powered by Python and Open-Meteo. **XWeather** features Modern Conky Widget, displays multiple Weather Info (Temperature, Wind Speed and Quality, 7 Day Forecast...).
 
 ---
 
