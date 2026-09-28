@@ -3,11 +3,9 @@
 </p>
 
 <p align="center">
-
-![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)
-![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-blue)
-![License](https://img.shields.io/badge/License-GPL-green)
-
+  <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/GUI-CustomTkinter-blue">
+  <img src="https://img.shields.io/badge/License-GPL-green">
 </p>   
 
 # XWeather
