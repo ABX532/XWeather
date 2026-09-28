@@ -1,0 +1,9 @@
+customtkinter
+openmeteo-requests
+openmeteo-sdk
+geopy
+requests
+pillow
+numpy
+flatbuffers
+
