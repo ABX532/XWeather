@@ -1,4 +1,4 @@
-[XWeather_icon.png]
+![XWeatherLogo](xweather_icon.png)
 
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)
 ![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-blue)
