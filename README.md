@@ -1,4 +1,4 @@
-<img src="xweather_icon.png" width="300" height="200">
+<img src="xweather_icon.png" width="200" height="200">
 
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)
 ![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-blue)
