@@ -1,97 +1,101 @@
-# XWeather 🌤️
+# XWeather
 
-A lightweight desktop weather application built with Python and **CustomTkinter**, utilizing the **Open-Meteo API** and **Geopy** for accurate real-time weather forecasting.
-
-![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=flat&logo=python&logoColor=white)
-![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-blue)
-![License](https://img.shields.io/badge/License-GPL-green)
+A lightweight, cross-platform weather application and Conky desktop widget powered by Python and Open-Meteo. **XWeather** features automatic location detection, current weather conditions, Air Quality Index (AQI), and a 7-day extended forecast with dynamic display scaling support.
 
 ---
 
 ## Features
 
-* **City Search & Coordinates:** Look up weather details by city name or exact latitude and longitude.
-* **Dynamic Search History:** Saves up to 10 recent searches locally to `~/.xweather/data.json` with quick-launch search tags.
-* **Auto-Wrapping UI:** Search tags dynamically wrap to new lines based on window width and city name length.
-* **Temperature Color-Coding:** Real-time visual status indicator changes color depending on temperature severity.
-* **Dark / Light Mode:** Built-in theme toggling.
-* **Offline & Connection Detection:** Displays distinct warnings for lost internet connectivity vs. invalid coordinates.
+* **Cross-Platform Compatibility:** Native installers and desktop integration for Linux, Windows, and macOS.
+* **Dual Display Options:** 
+  * Standalone Python GUI Application (`xweather.py`).
+  * Dynamic Conky Desktop Widget (`conky_2.py` / `weather_2.conf`).
+* **Zero Config Location:** Automatic IP-based geolocation lookup with offline fallback caching.
+* **Comprehensive Metrics:** Real-time temperature, humidity, wind speed & direction, precipitation probability, sunrise/sunset, AQI status, and 7-day daily forecasts.
+* **Proportional Widget Scaling:** Configurable scaling engine (`conky_settings.json`) that resizes window canvas, graphics, text offsets, and enforces minimum font bounds to prevent rendering distortion.
 
 ---
 
-# Notice
+## File Structure
 
-**Note**: For Better Experience, Consider Downloading The Following Fonts: Zekton, URW Gothic and Red Hat Text
-**Another Note:** This Project is Currently in Beta Release. You May Encounder Some Bugs. Please Report Any Bug.
-
----
-
-## Prerequisites & Installation
-
-Make sure you have Python 3.8 or higher installed on your system.
-
-### 1. Install Required Dependencies
-
-Install all required dependencies via `pip`:
-
-```bash
-pip install customtkinter openmeteo-requests geopy requests
+```text
+XWeather/  
+└── conky >
+    ├── conky.py                 # Conky Widget Generation Script
+    ├── weather.conf             # Conky Configuration File
+    ├── conky_settings.json      # Configuration file for scaling percentage
+    ├── xweather_icon.png        # Application Icon
+    ├── xweather_glass_panel.png # Background panel asset
+    └── requirements.txt         # Python dependency list
+├── xweather.py              # Main Script
+├── install.sh               # Linux Installer Script (System-wide)
+├── uninstall.sh             # Linux Uninstaller Script
+├── install.ps1              # Windows Installer Script (PowerShell)
+├── uninstall.ps1            # Windows Uninstaller Script
+├── install_mac.sh           # macOS Installer Script
+├── uninstall_mac.sh         # macOS Uninstaller Script
+├── xweather_logo.png        # Logo asset
+└── xweather_logo.svg        # Logo asset
 ```
 
-Or using a `requirements.txt` file:
-
+## Installation
+clone the repository
 ```bash
+git clone https://github.com/ABX532/XWeather/
+```
+
+# 🐧 Linux
+Run the installer script with sudo to set up /opt/xweather, create a dedicated Python virtual environment, and register an application menu launcher (.desktop).
+
+```Bash
+sudo chmod +x install.sh
+sudo ./install.sh
+```
+# 🪟 Windows
+Open PowerShell as Administrator, navigate to the project directory, and execute the installation script:
+
+```PowerShell
+powershell -ExecutionPolicy Bypass -File .\install.ps1
+Note: The Windows installer configures pythonw.exe to run the application silently in the background without opening a command prompt window.
+```
+
+# 🍎 macOS
+Open Terminal, navigate to the repository directory, and run the macOS setup script (no sudo required):
+
+```Bash
+chmod +x install_mac.sh
+./install_mac.sh
+```
+This creates an executable XWeather.command shortcut on your Desktop.
+
+## Prerequisites
+If installing manually without the provided installer scripts, ensure you have Python 3.8+ installed along with python3-tk (on Linux) and the following packages:
+
+```Bash
 pip install -r requirements.txt
 ```
+Dependencies:
 
-### 2. Clone or Download the Repository
+* openmeteo-requests
 
-```bash
-git clone https://github.com/ABX532/XWeather.git
-cd xweather
+*  requests-cache
+
+* retry-requests
+
+## Uninstallation
+To completely remove XWeather and its associated desktop launchers from your system:
+
+Linux: 
+```Bash
+sudo ./uninstall.sh
 ```
 
-## How to Run
-
-Run This Command. Simple As That
-Be Sure that You Are In XWeather file in Terminal
-
-```bash
-python3 main.py
+Windows: 
+```PowerShell
+powershell -ExecutionPolicy Bypass -File .\uninstall.ps1
 ```
 
----
-
-## Usage Guide
-
-1. **By Coordinates (Default Screen)**:
-   * Input the **Latitude** and **Longitude** (e.g., `40.7128` and `-74.0060` for New York).
-   * Click **Confirm** to load live weather data.
-
-2. **By City Name**:
-   * Click **Change To City Name**.
-   * Enter the city name (e.g., `London`, `Tokyo`, `Paris`).
-   * Click **Confirm** to geocode the city and retrieve current weather metrics.
-
----
-
-## Tech Stack & APIs
-
-* **GUI Framework**: [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)
-* **Weather Data**: [Open-Meteo API](https://open-meteo.com/)
-* **Geocoding Engine**: [GeoPy](https://geopy.readthedocs.io/) (Nominatim)
-* **Python API Client**: `openmeteo-requests`
-
----
-
-## Troubleshooting
-
-* **"City not found"**: Double-check the city spelling. You can also specify the country (e.g., "Paris, France").
-* **"Invalid coordinates"**: Ensure latitude is between -90 and 90, and longitude is between -180 and 180.
-* **Missing Dependencies**: Ensure all required libraries are installed using `pip install -r requirements.txt`.
-
----
-
-## License
-
-This project is open-source and available under the [GPLv3 License](LICENSE).
+macOS:
+```Bash
+./uninstall_mac.sh
+```
