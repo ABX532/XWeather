@@ -66,8 +66,8 @@ Open PowerShell as Administrator, navigate to the project directory, and execute
 
 ```PowerShell
 powershell -ExecutionPolicy Bypass -File .\install.ps1
-Note: The Windows installer configures pythonw.exe to run the application silently in the background without opening a command prompt window.
 ```
+Note: The Windows installer configures pythonw.exe to run the application silently in the background without opening a command prompt window.
 
 ### 🍎 macOS
 Open Terminal, navigate to the repository directory, and run the macOS setup script (no sudo required):
