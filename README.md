@@ -6,7 +6,7 @@
 
 # XWeather
 
-A lightweight, cross-platform weather application powered by Python and Open-Meteo. **XWeather** features Modern Conky Widget, displays multiple Weather Info (Temperature, Wind Speed and Quality, 7 Day Forecast...).
+A lightweight, open source and cross-platform weather application powered by Python and Open-Meteo. **XWeather** features Modern Conky Widget, Multiple Weather Info (Temperature, Wind Speed and Quality, 7 Day Forecast...), settings menu, perfect JSON System...
 
 ---
 
