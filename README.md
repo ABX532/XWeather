@@ -109,3 +109,8 @@ macOS:
 ```Bash
 ./uninstall_mac.sh
 ```
+
+## Licence
+This project is under GPL v3 Licence, Fell free to Contribute, report, and pull
+
+# Made With ❤️ By ABX
