@@ -30,13 +30,6 @@ A lightweight, open source and cross-platform weather application powered by Pyt
 
 ```text
 XWeather/  
-└── conky >
-    ├── conky.py                 # Conky Widget Generation Script
-    ├── weather.conf             # Conky Configuration File
-    ├── conky_settings.json      # Configuration file for scaling percentage
-    ├── xweather_icon.png        # Application Icon
-    ├── xweather_glass_panel.png # Background panel asset
-    └── requirements.txt         # Python dependency list
 ├── xweather.py              # Main Script
 ├── install.sh               # Linux Installer Script (System-wide)
 ├── uninstall.sh             # Linux Uninstaller Script
